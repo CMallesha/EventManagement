@@ -60,6 +60,7 @@ public class EventDAOImpl implements EventDAO {
             pstmt.setString(1, event.getName());
             pstmt.setString(2, event.getDescription());
             pstmt.setString(3, event.getLocation());
+
             pstmt.setInt(5, event.getId());
             int rowsUpdated = pstmt.executeUpdate();
             return rowsUpdated > 0;

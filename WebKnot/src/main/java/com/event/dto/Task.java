@@ -7,7 +7,8 @@ public class Task {
     private String name;
     private Date deadline;
     private String status; // Pending or Completed
-    private Attendee assignedAttendee;
+    private int attendee_id;
+    private int event_id;
 
     // Getters and Setters
     public int getId() {
@@ -42,11 +43,21 @@ public class Task {
         this.status = status;
     }
 
-    public Attendee getAssignedAttendee() {
-        return assignedAttendee;
-    }
+	public int getAttendee_id() {
+		return attendee_id;
+	}
 
-    public void setAssignedAttendee(Attendee assignedAttendee) {
-        this.assignedAttendee = assignedAttendee;
-    }
+	public void setAttendee_id(int attendee_id) {
+		this.attendee_id = attendee_id;
+	}
+
+	public int getEvent_id() {
+		return event_id;
+	}
+
+	public void setEvent_id(int event_id) {
+		this.event_id = event_id;
+	}
+
+ 
 }

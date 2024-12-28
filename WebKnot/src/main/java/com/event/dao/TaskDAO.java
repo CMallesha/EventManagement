@@ -1,5 +1,7 @@
 package com.event.dao;
 
+import java.util.List;
+
 import com.event.dto.Task;
 
 public interface TaskDAO {
@@ -8,7 +10,7 @@ public interface TaskDAO {
     public boolean CreateTask(Task t);
 
     // Method to get tasks for a specific event
-    public boolean GetTasksForEvent(int eventId);
+    public List GetTasksForEvent(int eventId);
 
     // Method to update task status
     public boolean UpdateTaskStatus(int taskId);

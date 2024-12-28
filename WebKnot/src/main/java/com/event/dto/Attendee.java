@@ -4,8 +4,17 @@ public class Attendee {
 	private int id;
     private String name;
     private String email;
+    private int event_id;
 
-    // Getters and Setters
+    public int getEventId() {
+		return event_id;
+	}
+
+	public void setEventId(int event_id) {
+		this.event_id = event_id;
+	}
+
+	// Getters and Setters
     public int getId() {
         return id;
     }
